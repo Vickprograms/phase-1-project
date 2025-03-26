@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("filter-btn").addEventListener("click", applyFilters);
 });
 
-// Fetch properties from db.json
 function fetchProperties() {
     fetch("http://localhost:3000/properties")
         .then(response => response.json())
@@ -12,7 +11,6 @@ function fetchProperties() {
         .catch(error => console.error("Error fetching properties:", error));
 }
 
-// Display properties
 function displayRentals(properties) {
     const propertiesContainer = document.getElementById("properties-container");
     propertiesContainer.innerHTML = ""; 
@@ -40,7 +38,6 @@ function displayRentals(properties) {
     });
 }
 
-// Show modal with property details
 function showPropertyDetails(id, properties) {
     const selectedProperty = properties.find(property => property.id == id);
     const modal = document.getElementById("property-modal");
@@ -63,7 +60,6 @@ function showPropertyDetails(id, properties) {
     }
 }
 
-// Apply search and filter
 function applyFilters() {
     const searchValue = document.getElementById("search").value.toLowerCase();
     const typeValue = document.getElementById("property-type").value;
@@ -89,12 +85,10 @@ function applyFilters() {
 }
 
 function displayRentals(properties) {
-    // Clear previous content
     document.getElementById("studio-list").innerHTML = "";
     document.getElementById("one-bedroom-list").innerHTML = "";
     document.getElementById("two-bedroom-list").innerHTML = "";
 
-    // Group properties by type
     const groupedProperties = {
         "studio": [],
         "one-bedroom": [],
@@ -107,7 +101,6 @@ function displayRentals(properties) {
         }
     });
 
-    // Function to create property cards
     function createPropertyCard(property) {
         return `
             <div class="property-card">
@@ -122,7 +115,6 @@ function displayRentals(properties) {
         `;
     }
 
-    // Render grouped properties
     Object.keys(groupedProperties).forEach(category => {
         let container = document.getElementById(`${category}-list`);
         groupedProperties[category].forEach(property => {
@@ -130,7 +122,6 @@ function displayRentals(properties) {
         });
     });
 
-    // Add event listeners for details buttons
     document.querySelectorAll(".details-btn").forEach(button => {
         button.addEventListener("click", event => {
             const propertyId = event.target.getAttribute("data-id");
