@@ -1,0 +1,59 @@
+{
+    "properties": [
+      {
+        "id": 1,
+        "name": "Cozy Studio",
+        "location": "Nairobi",
+        "price": 8000,
+        "image": "images/studio/5355946065d7e4606eb34898371aa9e5-se_medium_500_250.webp",
+        "description": "A cozy studio apartment in the heart of Nairobi with modern amenities.",
+        "category": "studio"
+      },
+      {
+        "id": 2,
+        "name": "Modern Studio",
+        "location": "Kilimani",
+        "price": 12000,
+        "image": "images/studio/pexels-heyho-7046007.jpg",
+        "description": "A modern studio with a good view and close to shopping centers.",
+        "category": "studio"
+      },
+      {
+        "id": 3,
+        "name": "Luxury 1-Bedroom",
+        "location": "Kilimani",
+        "price": 1800,
+        "image": "images/one-bedroom/one-bedroom1.jpg",
+        "description": "A luxury 1-bedroom apartment with a spacious living area and secure parking.",
+        "category": "one-bedroom"
+      },
+      {
+        "id": 4,
+        "name": "Affordable 1-Bedroom",
+        "location": "Eldoret",
+        "price": 1200,
+        "image": "images/one-bedroom/one-bedroom2.jpg",
+        "description": "An affordable and well-maintained 1-bedroom in Eldoret.",
+        "category": "one-bedroom"
+      },
+      {
+        "id": 5,
+        "name": "Spacious 2-Bedroom",
+        "location": "Nakuru",
+        "price": 2500,
+        "image": "images/two-bedrooms/two-bedroom1.jpg",
+        "description": "A spacious 2-bedroom house with a backyard and parking space.",
+        "category": "two-bedroom"
+      },
+      {
+        "id": 6,
+        "name": "Modern 2-Bedroom",
+        "location": "Thika",
+        "price": 2800,
+        "image": "images/two-bedrooms/two-bedroom2.jpg",
+        "description": "A modern 2-bedroom apartment with high-end finishes and a swimming pool.",
+        "category": "two-bedroom"
+      }
+    ]
+  }
+  
