@@ -3,51 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nest Quest</title>
+    <title>Nest Quest - Find Your Perfect Apartment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Nest Quest</h1>
     </header>
 
     <section class="search-filter">
-        <input type="text" id="search" placeholder="search by price">
+        <input type="text" id="search" placeholder="search by location">
         <select id="property-type">
             <option value="all">All Types</option>
-            <option value="stuido">Studio</option>
-            <option value="1-bedroom">1-Bedroom</option>
-            <option value="2-bedroom">2-Bedroom</option>
+            <option value="apartment">Studio</option>
+            <option value="house">1-Bedroom</option>
+            <option value="studio">2-Bedroom</option>
         </select>
-
         <select id="price-range">
             <option value="all">All Prices</option>
-            <option value="5000">0 - 5000</option>
-            <option value="10000">5001 - 10000</option>
-            <option value="20000">10001 - 20000</option>
-            <option value="30000">20001 - 30000</option>
+            <option value="1000">0 KSH - 1,000 KSH</option>
+            <option value="2000">1,001 KSH - 2,000 KSH</option>
+            <option value="3000">2,001 KSH - 3,000 KSH</option>
         </select>
-        <button id="filter-btn">Apply Filters</button>
+        <button id="filter-btn">Apply Fillter</button>
     </section>
+    
+    <main>
+        <section id="studio">
+            <h2>Studio Apartment</h2>
+            <div class="property-container" id="studio-list"></div>
+        </section>
+
+        <section id="one-bedroom">
+            <h2>1-Bedroom Apartments</h2>
+            <div class="property-container" id="one-bedroom-list"></div>
+        </section>
 
 
-<section id="rental-listings">
-    <!--js list of rented properties --->
-</section>
+        <section id="two-bedroom">
+            <h2>2-Bedroom Apartments</h2>
+            <div class="property-container" id="two-bedroom-list"></div>
+        </section>
+    </main>
 
-<div id="property-model" class="modal">
-    <div class="model-content">
-        <span class="close">&times;</span>
-        <h2 id="property-title"></h2>
-        <img src="./images/studio/DLY_1707 copy.webp" alt="property-image">
-        <p id="poperty-description"></p>
-        <P><strong>Price:</strong> <span id="property-price"></span></P>
-        <P><strong>Location:</strong> <span id="property-location"></span></P>
-        <P><strong>Bedrooms:</strong> <span id="property-bedrooms"></span></P>
-        <P><strong>Contact:</strong> <span id="property-contact"></span></P>
+    <div id="property-model" class="model">
+        <div class="model-content">
+            <span class="close-btn">$times;</span>
+            <img id="modelImage" src="" alt="Property-image">
+            <h3 id="modelTitle"></h3>
+            <p><strong>Location:</strong><span id="modelLocation"></span></p>
+            <p><strong>Price:</strong> KSH <span id="modelPrice"></span> /month</p>
+            <p id="modelDescription"></p>
+        </div>
     </div>
-</div>
 
-<script src="index.js"></script>
 
+<footer>
+    <div class="footer-content">
+        <p>Contact: <a href="mailto:victormugo08@gmail.com">info@nestquest.com</a></p>
+        <div class="links">
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Threads</a>
+    </div>
+ </div>
+</footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
