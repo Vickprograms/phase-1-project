@@ -4,8 +4,8 @@
         "id": 1,
         "name": "Cozy Studio",
         "location": "Nairobi",
-        "price": 8000,
-        "image": "images/studio/5355946065d7e4606eb34898371aa9e5-se_medium_500_250.webp",
+        "price": 9000,
+        "image": "images/studio/std2.webp",
         "description": "A cozy studio apartment in the heart of Nairobi with modern amenities.",
         "category": "studio"
       },
@@ -13,44 +13,71 @@
         "id": 2,
         "name": "Modern Studio",
         "location": "Kilimani",
-        "price": 12000,
-        "image": "images/studio/pexels-heyho-7046007.jpg",
+        "price": 8000,
+        "image": "images/studio/std1.webp",
         "description": "A modern studio with a good view and close to shopping centers.",
         "category": "studio"
       },
       {
         "id": 3,
+        "name": "Spacious Studio",
+        "location": "Kilimani",
+        "price": 12000,
+        "image": "images/studio/std3.webp",
+        "description": "A modern studio with natural lighting and and ample parking.",
+        "category": "studio"
+      },
+      {
+        "id": 4,
         "name": "Luxury 1-Bedroom",
         "location": "Kilimani",
-        "price": 1800,
-        "image": "images/one-bedroom/one-bedroom1.jpg",
+        "price": 16000,
+        "image": "images/1-bedroom/1b.webp",
         "description": "A luxury 1-bedroom apartment with a spacious living area and secure parking.",
         "category": "one-bedroom"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Affordable 1-Bedroom",
         "location": "Eldoret",
-        "price": 1200,
-        "image": "images/one-bedroom/one-bedroom2.jpg",
+        "price": 22000,
+        "image": "images/1-bedroom/1b2.webp",
         "description": "An affordable and well-maintained 1-bedroom in Eldoret.",
         "category": "one-bedroom"
       },
       {
-        "id": 5,
+        "id": 6,
+        "name": "Loft 1-Bedroom",
+        "location": "Runda",
+        "price": 24000,
+        "image": "images/1-bedroom/pexels-heyho-7045834.jpg",
+        "description": "An affordable and well-maintained 1-bedroom in Eldoret.",
+        "category": "one-bedroom"
+      },
+      {
+        "id": 7,
         "name": "Spacious 2-Bedroom",
         "location": "Nakuru",
-        "price": 2500,
-        "image": "images/two-bedrooms/two-bedroom1.jpg",
+        "price": 28000,
+        "image": "images/2-bedroom/pexels-heyho-5997959.jpg",
         "description": "A spacious 2-bedroom house with a backyard and parking space.",
         "category": "two-bedroom"
       },
       {
-        "id": 6,
+        "id": 8,
         "name": "Modern 2-Bedroom",
         "location": "Thika",
-        "price": 2800,
-        "image": "images/two-bedrooms/two-bedroom2.jpg",
+        "price": 22000,
+        "image": "images/2-bedroom/2b.webp",
+        "description": "A modern 2-bedroom apartment with high-end finishes and a swimming pool.",
+        "category": "two-bedroom"
+      },
+      {
+        "id" : 9,
+        "name": "Classy 2-Bedroom",
+        "location": "Thika",
+        "price": 20000,
+        "image": "images/2-bedroom/2b2.webp",
         "description": "A modern 2-bedroom apartment with high-end finishes and a swimming pool.",
         "category": "two-bedroom"
       }

@@ -16,20 +16,24 @@
         <input type="text" id="search" placeholder="search by location">
         <select id="property-type">
             <option value="all">All Types</option>
-            <option value="apartment">Studio</option>
-            <option value="house">1-Bedroom</option>
-            <option value="studio">2-Bedroom</option>
+            <option value="Studio">Studio</option>
+            <option value="one-bedroom">1-Bedroom</option>
+            <option value="two-bedroom">2-Bedroom</option>
         </select>
         <select id="price-range">
             <option value="all">All Prices</option>
-            <option value="1000">0 KSH - 1,000 KSH</option>
-            <option value="2000">1,001 KSH - 2,000 KSH</option>
-            <option value="3000">2,001 KSH - 3,000 KSH</option>
+            <option value="10000">0 KSH - 10,000 KSH</option>
+            <option value="20000">10,001 KSH - 20,000 KSH</option>
+            <option value="30000">20,001 KSH - 30,000 KSH</option>
         </select>
-        <button id="filter-btn">Apply Fillter</button>
+        <button id="filter-btn">Apply Filter</button>
     </section>
     
     <main>
+        <div id="properties-container"></div>
+        <div class="property-card"></div>
+        <div class="preview-overlay"></div>
+
         <section id="studio">
             <h2>Studio Apartment</h2>
             <div class="property-container" id="studio-list"></div>
@@ -47,14 +51,14 @@
         </section>
     </main>
 
-    <div id="property-model" class="model">
-        <div class="model-content">
-            <span class="close-btn">$times;</span>
-            <img id="modelImage" src="" alt="Property-image">
-            <h3 id="modelTitle"></h3>
-            <p><strong>Location:</strong><span id="modelLocation"></span></p>
-            <p><strong>Price:</strong> KSH <span id="modelPrice"></span> /month</p>
-            <p id="modelDescription"></p>
+    <div id="property-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span> 
+            <img id="modalImage" src="" alt="Property-image">
+            <h3 id="modalTitle"></h3>
+            <p><strong>Location:</strong><span id="modalLocation"></span></p>
+            <p><strong>Price:</strong> KSH <span id="modalPrice"></span> /month</p>
+            <p id="modalDescription"></p>
         </div>
     </div>
 
